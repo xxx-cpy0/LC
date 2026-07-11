@@ -30,7 +30,7 @@ class Solution {
                 }
                 root1 = root1.right;
             }
-            if(val < root1.val){
+            else if(val < root1.val){
                 if(root1.left == null){
                     TreeNode temp = new TreeNode(val);
                     root1.left = temp;
